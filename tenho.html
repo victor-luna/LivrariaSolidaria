@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta name="keywords" content="livros usados, doacao, livros, sebo">
+  <meta name="description" content="I Exercicio HTML/CSS">
+  <title>Livraria Solidária - Tenho um Livro</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen'
+    href='C:\Users\Warli\Documents\Code\livraria solidária\index.css'>
+
+</head>
+
+<body>
+  <header>
+    <div>
+      <a href="./index.html" id="logo">LIVRARIA SOLIDÁRIA</a>
+    </div>
+    <div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="tenho.html">Tenho Um Livro</a></li>
+          <li><a href="preciso.html">Preciso De Um Livro</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <h2 class="titulopaginas">Cadastro de Livro - Doador</h2>
+
+    <form action="/tenho.html">
+      <div class="formulario">
+        <label for="nome">Primeiro Nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="Seu Nome">
+        <label for="sobrenome">Sobrenome:</label>
+        <input type="text" id="sobrenome" name="sobrenome" placeholder="Sobrenome">
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" placeholder="seu@email.com">
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" placeholder="(81) 99999-9999">
+        <label for="cidade">Cidade:</label>
+        <input type="text" id="cidade" name="cidade" placeholder="Recife">
+
+        <label for="estado">Estado</label>
+        <select id="estado" name="estado">
+          <option value="AC">Acre</option>
+          <option value="AL">Alagoas</option>
+          <option value="AP">Amapá</option>
+          <option value="AM">Amazonas</option>
+          <option value="BA">Bahia</option>
+          <option value="CE">Ceará</option>
+          <option value="DF">Distrito Federal</option>
+          <option value="ES">Espírito Santo</option>
+          <option value="GO">Goiás</option>
+          <option value="MA">Maranhão</option>
+          <option value="MT">Mato Grosso</option>
+          <option value="MS">Mato Grosso do Sul</option>
+          <option value="MG">Minas Gerais</option>
+          <option value="PA">Pará</option>
+          <option value="PB">Paraíba</option>
+          <option value="PR">Paraná</option>
+          <option value="PE" selected="PE">Pernambuco</option>
+          <option value="PI">Piauí</option>
+          <option value="RJ">Rio de Janeiro</option>
+          <option value="RN">Rio Grande do Norte</option>
+          <option value="RS">Rio Grande do Sul</option>
+          <option value="RO">Rondônia</option>
+          <option value="RR">Roraima</option>
+          <option value="SC">Santa Catarina</option>
+          <option value="SP">São Paulo</option>
+          <option value="SE">Sergipe</option>
+          <option value="TO">Tocantins</option>
+          <option value="NBR">Fora do Brasil</option>
+        </select>
+
+        <p>Preferência de contato:</p>
+        <input type="checkbox" id="prefemail" name="prefcontato" value="email">
+        <label for="prefemail"> E-mail</label><br>
+        <input type="checkbox" id="preftel" name="prefcontato" value="telefone">
+        <label for="preftel"> Telefone</label><br>
+
+        <p>Restringir alcance estadual:</p>
+        <input type="radio" id="estadosim" name="alcanceestado" value="sim">
+        <label for="estadosim" title="O livro estará disponível apenas para aqueles que moram em seu estado.">
+          Sim</label><br>
+        <input type="radio" id="estadonao" name="alcanceestado" value="nao">
+        <label for="estadonao" title="O livro estará disponível para todos."> Não</label><br>
+
+        <label for="livtitulo">Título do livro:</label>
+        <input type="text" id="livtitulo" name="livtitulo" placeholder="Informática - Conceitos e Aplicações">
+        <label for="livautor">Autor:</label>
+        <input type="text" id="livautor" name="livautor" placeholder="Marçula & Benini Filho">
+        <label for="lived">Edição:</label>
+        <input type="text" id="lived" name="lived" placeholder="4ª">
+
+        <p>Condição do livro:</p>
+        <input type="radio" id="condotima" name="condicaolivro" value="otima">
+        <label for="condotima" title="Praticamente novo!"> Ótima</label><br>
+        <input type="radio" id="condboa" name="condicaolivro" value="boa">
+        <label for="condboa" title="Marcas de uso, em bom estado."> Boa</label><br>
+        <input type="radio" id="conraz" name="condicaolivro" value="razoavel">
+        <label for="conraz" title="Algumas falhas/rasgos que não comprometam a leitura."> Razoável</label><br>
+
+
+
+        <label for="comentarios">Comentários:</label>
+        <textarea id="comentarios" name="comentarios"
+          placeholder="Informações ou esclarecimentos adicionais que o usuário deseja colocar. (Máximo de 800 caracteres)"
+          maxlength="800" style="height:130px"></textarea>
+
+        <div class="botoesForm">
+          <button type="submit" value="Enviar" class="botaoFormulario">Enviar</button>
+          <button type="reset" value="Apagar" class="botaoFormulario">Limpar</button>
+        </div>
+      </div>
+
+    </form>
+  </main>
+  <footer>
+    <div><b>
+        <p>Entre em contato conosco através do email</p>
+        <p>contato@livrariasolidaria.com.br</p>
+      </b>
+    </div>
+    <p>
+      <b> &copy; Todos os direitos reservados</b>
+    </p>
+  </footer>
+</body>
+
+</html>
