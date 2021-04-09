@@ -66,6 +66,12 @@ ul {
     margin: 0 120px 65px 120px;
     vertical-align: top;
 }
+.secao2 {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 120px 65px 120px;
+    align-items: center;
+}
 
 .paragrafos {
     display: flex;
