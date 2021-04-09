@@ -29,18 +29,18 @@ ul {
     list-style: none;  
 }
 
-li {
+.menuItem {
      padding: 25px;
 }
 
-a {
+.Menu {
     display: block;
     color: white;
     text-align: center;
     text-decoration: none;
 }
 
-li:hover {
+.menuItem:hover {
     background-color: #2c2c0a;
   }
 
@@ -63,7 +63,8 @@ li:hover {
 .secao {
     display: flex;
     justify-content: space-between;
-    margin: 0 15px 65px 15px;
+    margin: 0 120px 65px 120px;
+    vertical-align: top;
 }
 
 .paragrafos {
@@ -72,11 +73,11 @@ li:hover {
     justify-content: space-between;
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
-    max-width: 800px;
+    max-width: 600px;
 }
 
 .paragrafos > p {
-    padding: 10px;
+    
     text-align: justify;
 }
 
@@ -197,4 +198,9 @@ input[type=text], input[type=email], input[type=tel], select, textarea {
 
 #img2 {
   width: 100%;
+}
+
+#listaGenero {
+    display: flex;
+    flex-direction: column;
 }
