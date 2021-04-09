@@ -40,7 +40,7 @@ a {
     text-decoration: none;
 }
 
-li a:hover {
+li:hover {
     background-color: #2c2c0a;
   }
 
